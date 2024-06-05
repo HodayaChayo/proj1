@@ -1,0 +1,103 @@
+/**General Settings:*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%; /* *10 px */
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  /* max-width: 1000px; */
+  margin: auto;
+  /* height: 200vh; */
+}
+
+/** Navigation Settings: */
+
+ul,
+li {
+  list-style: none;
+}
+
+nav {
+  position: fixed;
+  max-height: 55px;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: center;
+  /* flex-wrap: 1; */
+  /* gap: 2em; */
+}
+
+nav > ul > li {
+  padding-right: 2em;
+}
+
+/** Swipe Gallery: */
+
+.slideshow {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  /* top: 60px; */
+
+}
+
+.slideshow img {
+  width: 100%;
+  height: 540px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slideshow img:first-child {
+  z-index: 1;
+}
+
+.slideshow imag:nth-of-type(2) {
+  z-index: 0;
+}
+
+.navigation-button {
+  text-align: center;
+  position: relative;
+  
+}
+
+.dots-container{
+  border: solid red 2px;
+  display: flex;
+  justify-content:center ;
+  margin-bottom: 1rem;
+
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+
+  
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
