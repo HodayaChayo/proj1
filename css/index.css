@@ -14,9 +14,12 @@ body {
   max-width: 1000px;
   margin: auto;
   /* height: 200vh; */
+  font-family: "Heebo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 
 }
-
 
 /** Navigation Settings: */
 
